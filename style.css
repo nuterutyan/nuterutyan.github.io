@@ -20,7 +20,7 @@ padding-right: 24px;
 }
 /* add a fancy background */
 html {
-background: radial-gradient(circle, red, green 50%, blue 50%, SkyBlue);
+background: radial-gradient(circle, blue, red 50%, green 50%, SkyBlue);
 background-size: 8px 8px;
 }
 /* header */
@@ -67,7 +67,7 @@ text-decoration: underline;
 }
 /* biographies */
 section {
-background-color: red;
+background-color: green;
 margin-bottom: 24px;
 min-height: 320px;
 padding-left: 24px;
@@ -84,7 +84,7 @@ float: left;
 margin-top: 0px;
 }
 footer p.contact {
-text-align: center;
+text-align: right;
 }
 
 /* small images are set to 200px in height */
@@ -105,8 +105,8 @@ width: 100%;
 }
 /* add the same style of border to the elements which are to have borders */
 body, section, img {
-border: 2px solid red;
-border-radius: 34px;
+border: 2px solid #B1B1B1;
+border-radius: 16px;
 }
 /* the bits that are specific to a wide viewport (over 56em) */
 @media all and (min-width: 900px) {
@@ -123,7 +123,3 @@ footer {
 clear: both;
 }
 }
-
-.feature-row__text--left{padding-left:35px;text-align:center;}
-.feature-row__text--left{padding-left:35px}
-<link rel="icon" href="Game.ico" type="image/x-icon"/>
