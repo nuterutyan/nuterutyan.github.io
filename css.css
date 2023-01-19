@@ -2,7 +2,6 @@ container {
   cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300);
   cursor: url('https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300'), default;
 }
-cursor: url('https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300'), default;
 
 /* set sizing to border box method */
 html {
@@ -14,7 +13,7 @@ cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falterna
 }
 /* set maximum and minimum widths for the body and centre within the viewport */
 body {
-background-color: red;
+background-image: url("https://coolbackgrounds.io/images/backgrounds/index/aqua-d9b59c89.png");
 font-family: sans-serif;
 margin-left: auto;
 margin-right: auto;
@@ -28,7 +27,7 @@ cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falterna
 }
 /* add a fancy background */
 html {
-background: radial-gradient(circle, red, green 50%, blue 50%, SkyBlue);
+background: radial-gradient(#2C2C2C);
 background-size: 8px 8px;
 cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300);
 }
@@ -84,7 +83,9 @@ cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falterna
 }
 /* biographies */
 section {
-background-color: red;
+border-radius: 34px;
+border: 2px solid #261e67;
+background-color: #2C2C2C;
 margin-bottom: 24px;
 min-height: 320px;
 padding-left: 24px;
@@ -126,8 +127,8 @@ width: 100%;
 cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300);
 }
 /* add the same style of border to the elements which are to have borders */
-body, section, img {
-border: 2px solid red;
+body, img {
+border: 2px solid #261e67;
 border-radius: 34px;
 cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300);
 }
@@ -153,10 +154,10 @@ cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falterna
 .feature-row__text--left{padding-left:35px;text-align:center;}
 .feature-row__text--left{padding-left:35px}
 
-<link rel="icon" href="Game.ico" type="image/x-icon"/>
+h2 {
+  color: rgb(224, 224, 224);
+}
 
-cursor: url('https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300'), default;
-
-container {
-  cursor:url(https://cdn.glitch.com/31b965d6-7bc8-4776-bfab-08b1e1f32444%2Falternate.cur?v=1612351110300);
+label {
+  color: white
 }
