@@ -9,43 +9,43 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Tarayıcı dilini almak
-            var userLang = navigator.language || navigator.userLanguage;
+    // Tarayıcı dilini almak
+    var userLang = navigator.language || 'tr'; // Varsayılan olarak İngilizce
 
-            var translations = {
-                tr: {
-                    "gizliler": "Eski Gizli Coverlar (kimseye söyleme)",
-                    "yazi1": "Bu siteyle uzun zamandır ilgilenmiyordum, bugün 28 Temmuz 2024 çoğu şeyi silmeye ve değiştirmeye geldim :33",
-                    "yazi2": "Sitede şimdilik sadece 4 tane hesabımın bağlantısı var, bir gün başka şeyler ekler miyim bilmiyorum."
-                },
-                en: {
-                    "gizliler": "Old Secret Covers (don't tell anyone)",
-                    "yazi1": "I haven't been cared in this site for a long time, today, July 28, 2024, I came to delete and change most things :33",
-                    "yazi2": "There is currently links of my 4 accounts on this site, I don't know will I add something someday."
-                },
-                ja: {
-                    "gizliler": "古い秘密の歌",
-                    "yazi1": "長い間このサイトにお世話になっていなかったのですが、今日、2024年7月28日、ほとんどのものを削除して変更することにしました :33",
-                    "yazi2": "今のところ、このサイトでは私のアカウントへのリンクが4ありますが、いつか他のものを追加するかどうかはわかりません。"
-                }
-            }};
+    var translations = {
+        tr: {
+            "gizliler": "Eski Gizli Coverlar (kimseye söyleme)",
+            "yazi1": "Bu siteyle uzun zamandır ilgilenmiyordum, bugün 28 Temmuz 2024 çoğu şeyi silmeye ve değiştirmeye geldim :33",
+            "yazi2": "Sitede şimdilik sadece 4 tane hesabımın bağlantısı var, bir gün başka şeyler ekler miyim bilmiyorum."
+        },
+        en: {
+            "gizliler": "Old Secret Covers (don't tell anyone)",
+            "yazi1": "I haven't been cared in this site for a long time, today, July 28, 2024, I came to delete and change most things :33",
+            "yazi2": "There is currently links of my 4 accounts on this site, I don't know will I add something someday."
+        },
+        ja: {
+            "gizliler": "古い秘密の歌",
+            "yazi1": "長い間このサイトにお世話になっていなかったのですが、今日、2024年7月28日、ほとんどのものを削除して変更することにしました :33",
+            "yazi2": "今のところ、このサイトでは私のアカウントへのリンクが4ありますが、いつか他のものを追加するかどうかはわかりません。"
+        }
+    };
 
-            // Dil seçimi yapılacak elementler
-            var elementsToTranslate = document.querySelectorAll('[id]');
+    // Dil seçimi yapılacak elementler
+    var elementsToTranslate = document.querySelectorAll('[id]'); // ID'ye göre öğeleri seç
 
-            // Her elementin dilini ayarlamak
-            elementsToTranslate.forEach(function(element) {
-                var id = element.id;
+    // Her elementin dilini ayarlamak
+    elementsToTranslate.forEach(function(element) {
+        var id = element.id;
 
-                // Eğer tarayıcı dili mevcutsa, uygun çeviriyi kullan
-                if (translations[userLang] && translations[userLang][id]) {
-                    element.textContent = translations[userLang][id];
-                } else if (translations.en && translations.en[id]) {
-                    // Eğer tarayıcı dilinde bulunmayan bir id varsa, İngilizce metni kullan
-                    element.textContent = translations.en[id];
-                }
-            });
-        });
+        // Eğer tarayıcı dilinde uygun bir çeviri varsa, o dilin metnini kullan
+        if (translations[userLang] && translations[userLang][id]) {
+            element.textContent = translations[userLang][id];
+        } else if (translations.en && translations.en[id]) {
+            // Eğer dil mevcut değilse, İngilizceyi kullan
+            element.textContent = translations.en[id];
+        }
+    });
+});
     </script>
 
 
