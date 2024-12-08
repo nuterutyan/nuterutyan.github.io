@@ -11,7 +11,7 @@ function changeLanguage() {
         document.getElementById('yazi2').textContent = "There is currently links of my 4 accounts on this site, I don't know will I add something someday.";
     } else if(language === 'jp') {
         document.getElementById('gizliler').textContent = "古い秘密の歌";
-        document.getElementById('yazi1').textContent = "長い間このサイトにお世話になっていなかったのですが、今日、2024 年 7 月 28 日、ほとんどのものを削除して変更することにしました :33";
+        document.getElementById('yazi1').textContent = "長い間このサイトにお世話になっていなかったのですが、今日、2024年7月28日、ほとんどのものを削除して変更することにしました :33";
         document.getElementById('yazi2').textContent = "今のところ、このサイトでは私のアカウントへのリンクが4ありますが、いつか他のものを追加するかどうかはわかりません。";
     }
 }
