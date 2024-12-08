@@ -10,7 +10,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
     // Tarayıcı dilini almak
-    var userLang = navigator.language || 'tr'; // Varsayılan olarak İngilizce
+    var userLang = navigator.language || 'tr';
 
     var translations = {
         tr: {
@@ -42,7 +42,7 @@
             element.textContent = translations[userLang][id];
         } else if (translations.en && translations.en[id]) {
             // Eğer dil mevcut değilse, İngilizceyi kullan
-            element.textContent = translations.en[id];
+            element.textContent = translations.tr[id];
         }
     });
 });
